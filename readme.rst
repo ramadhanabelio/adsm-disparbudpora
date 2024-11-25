@@ -1,71 +1,122 @@
-###################
-What is CodeIgniter
-###################
+<div align="center">
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+<img src="assets/img/logo_disparbudpora.png"  width=280  align="center">
 
-*******************
-Release Information
-*******************
+##
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+### Aplikasi Disposisi Surat Masuk, Dinas Pariwisata, Kebudayaan, Kepemudaan dan Olahraga Kabupaten Bengkalis
 
-**************************
-Changelog and New Features
-**************************
+</div>
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+## 📙 Description
 
-*******************
-Server Requirements
-*******************
+Aplikasi Disposisi Surat Masuk for the Bengkalis Regency Tourism, Culture, Youth and Sports Office is a system designed to facilitate the management of entry letters in this service. This application has two main actors, namely the General Section and Field Operators. The General Section is responsible for sending incoming letters and disposing of these letters to the Head of Department and the fields within the Department of Tourism, Culture, Youth and Sports (DISPARBUDPORA).
 
-PHP version 5.6 or newer is recommended.
+In addition, Field Operators also have the ability to archive incoming letters that have been processed. This disposition feature ensures that incoming mail can be followed up quickly by the authorized parties. The General Section also has the right to add units and users who can log into the application, making it easier to manage access and membership in the system.
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+With this application, the management of incoming letters becomes more structured and efficient, supporting smooth administration within the Bengkalis Regency Tourism, Culture, Youth and Sports Office.
 
-************
-Installation
-************
+![Aplikasi Disposisi Surat Masuk Thumbnail](assets/img/Thumbnail.png)
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+## 📖 Features
 
-*******
-License
-*******
+Interesting features of Aplikasi Disposisi Surat Masuk:
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+1. **Authentication**: This feature allows registered users, such as admins and field operators, to log into the application using a registered account.
 
-*********
-Resources
-*********
+2. **CRUD Incoming Letter Data**: This feature allows the General Department to add, view, change, search and delete data on incoming letters received by the Department. Users can manage incoming letters efficiently, including grouping letters.
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+3. **Disposition of Incoming Letters**: After the letter is received, the General Department can dispose of the letter to the Head of Service and related fields in DISPARBUDPORA, ensuring that the letter is followed up appropriately. This disposition ensures that every incoming letter can be processed in a clear and timely manner.
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+4. **Incoming Mail Tracking**: This feature allows the General Department to track the status of incoming mail that has been disposed of. Users can see the progress of the letter's disposition, who has followed up on the letter, as well as the status and last date the letter was processed. This tracking feature helps ensure that no mail is missed and ensures that mail is processed according to the established flow.
 
-***************
-Acknowledgement
-***************
+5. **Archive of Incoming Letters**: After disposition, letters can be archived for future documentation and reference purposes. The General Department can manage incoming mail archives neatly and easily accessed.
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+6. **Unit and User Management**: The General section has access rights to add new units and users who can log into the system. This feature makes it easier for administration to manage membership and access rights in the application, so that only authorized users can access certain features.
+
+## 🛠️ Project Installation Guide
+
+Following are the steps to install a CodeIgniter project:
+
+### Prerequisites
+
+Make sure you have [PHP](https://www.php.net/) installed on your system before starting the installation.
+
+### Steps
+
+**1.** Clone your CodeIgniter project repository into a local directory:
+
+```bash
+git clone https://github.com/ramadhanabelio/adsm-disparbudpora.git
+```
+
+**2.** Go to the project directory:
+
+```bash
+cd adsm-disparbudpora
+```
+
+**3.** Configure base_url in application/config/config.php:
+
+Open the config.php file located at application/config/config.php.
+Look for the following line:
+
+```bash
+$config['base_url'] = 'http://localhost:8080/surat_disparbudpora/';
+```
+
+Modify the URL to match the directory or folder name of your project. For example, if the project is in a folder called surat_disparbudpora, keep it as is. If the folder name is different, change it accordingly:
+
+$config['base_url'] = 'http://localhost/adsm-disparbudpora/';
+
+**4.** 4. Configure the database in application/config/database.php:
+
+First, create a database named adsm_diparbudpora in your MySQL database.
+
+```bash
+CREATE DATABASE adsm_diparbudpora;
+```
+
+Open the database.php file located at application/config/database.php.
+Update the database connection settings to match your local database configuration:
+
+```bash
+'hostname' => 'localhost',
+'username' => 'root',
+'password' => '',
+'database' => 'adsm_diparbudpora',
+```
+
+**5.** Create a folder for file uploads:
+
+1. Open your command prompt (CMD) or terminal.
+2. Navigate to the assets folder in your project directory.
+3. Create a folder named file and then create a subfolder called suratmasuk within it to store incoming letter files:
+
+```bash
+cd assets
+mkdir file
+cd file
+mkdir suratmasuk
+```
+
+**6.** Create a folder for signature images:
+
+Similarly, create a folder named signature-image in the assets directory to store signature images:
+
+```bash
+cd ../
+mkdir signature-image
+```
+
+**7.** Access your project:
+
+Once the configuration is complete, you can access your project via the browser. Open your browser and go to the URL specified in the base_url setting.
+
+For example, if you set the base_url as http://localhost:8080/adsm-disparbudpora/, you can access the application by visiting:
+
+```bash
+http://localhost:8080/adsm-disparbudpora/
+```
+
+After following the steps above, your CodeIgniter project is now ready to use and can be accessed via the browser at http://localhost:8080/adsm-disparbudpora.
