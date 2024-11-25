@@ -205,20 +205,12 @@ class SuratMasuk extends CI_Controller
         $data['start'] = $this->uri->segment(3);
         $data['suratmasuk'] = $this->SuratMasuk_model->getAllSuratMasukLaporan2($config['per_page'], $data['start'], $data['keyword']);
 
-
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
         $this->load->view('surat_masuk/daftarsurat', $data);
         $this->load->view('templates/footer');
     }
-
-
-
-
-
-
-
 
     // Not Used
     public function suratpertanggal()

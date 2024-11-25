@@ -2,7 +2,9 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mt-4 mb-4 text-gray-800"><?= $title; ?></h1>
+    <div class="d-sm-flex align-items-center justify-content-between mb-2">
+        <h1 class="h3 mt-4 mb-4 text-gray-800"><?= $title; ?></h1>
+    </div>
 
     <div class="row">
         <div class="col-md-6">

@@ -7,13 +7,13 @@ class Unit_model extends CI_Model
     {
         return $this->db->get('tb_unit')->result_array();
     }
-    
+
     public function getAllUnit1()
     {
         $this->db->where('tb_unit.nama_unit' !== 'Administrator');
         return $this->db->get('tb_unit')->result_array();
     }
-    
+
     public function getAllJabatan2($id_unit)
     {
         $this->db->join('tb_unit', 'tb_unit.id_unit = tb_jabatan.id_unit');
@@ -55,7 +55,7 @@ class Unit_model extends CI_Model
 
         $this->db->insert('tb_jabatan', $data);
     }
-    
+
     public function tambahJabatan2()
     {
         $data = [
@@ -65,5 +65,4 @@ class Unit_model extends CI_Model
 
         $this->db->insert('tb_jabatan', $data);
     }
-    
 }

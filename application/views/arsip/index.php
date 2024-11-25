@@ -3,13 +3,13 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-2">
-        <h1 class="h3 mb-2 text-gray-800"><?= $title; ?></h1>
+        <h1 class="h3 mt-4 mb-4 text-gray-800"><?= $title; ?></h1>
     </div>
 
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">NO</th>
+                <th scope="col">No.</th>
                 <th scope="col">Nomor Surat</th>
                 <th scope="col">Dari</th>
                 <th scope="col">Tanggal Surat</th>
@@ -23,7 +23,7 @@
             $i = 1;
             foreach ($arsip as $ar) : ?>
                 <tr>
-                    <td><?= ++$start; ?></td>
+                    <td><?= ++$start; ?>.</td>
                     <td><?= $ar['no_surat'] ?></td>
                     <td><?= $ar['dari'] ?></td>
                     <td><?= date("d-m-Y", strtotime($ar['tgl_surat'])) ?></td>

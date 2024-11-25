@@ -9,7 +9,6 @@ class Disposisi extends CI_Controller
         $data['user'] = $this->db->get_where('tb_user', ['username' => $this->session->userdata('username')])->row_array();
         // $data['disposisi'] = $this->Disposisi_model->disposisiSurat();
 
-
         // Load Pagination
         $this->load->library('pagination');
 

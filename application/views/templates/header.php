@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?= $title; ?></title>
+    <title>Aplikasi Disposisi Surat DISPARBUDPORA | <?= $title; ?></title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,15 +19,14 @@
     <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- STYLE Tanda Tanga Digital -->
-    
 
     <!-- CDN CSS Tanda Tangan Digital-->
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url();?>assets/css/animate.css">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/animate.css">
 
     <!-- JS Tanda Tangan Digital -->
-    <script src="<?php echo base_url();?>assets/js/jquery-2.1.3.min.js"></script> 
-	<script src="<?php echo base_url();?>assets/js/bootstrap.min.js" ></script> 
-	<script type="text/javascript" src="<?php echo base_url();?>assets/js/signature-pad.js"></script> 
+    <script src="<?php echo base_url(); ?>assets/js/jquery-2.1.3.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/signature-pad.js"></script>
 </head>
 
 <body id="page-top">

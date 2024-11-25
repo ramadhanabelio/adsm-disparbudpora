@@ -41,7 +41,7 @@
         <tr>
             <td>Nomor Surat</td>
             <td><?= $suratmasuk['no_surat'] ?></td>
-            <td colspan="2">Status Surat : 
+            <td colspan="2">Status Surat :
                 <?php if ($suratmasuk["status_surat"] !== 'Asli') { ?>
                     <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                 <?php } else { ?>
@@ -60,7 +60,7 @@
             <td>Tanggal Surat</td>
             <td><?= date("d-m-Y", strtotime($suratmasuk['tgl_surat'])) ?></td>
             <td colspan="2" rowspan="2">
-                Prioritas Surat : 
+                Prioritas Surat :
                 <?php if ($suratmasuk["prioritas_surat"] !== 'Sangat Segera/Kilat') { ?>
                     <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                 <?php } else { ?>
@@ -126,7 +126,7 @@
         </tr>
         <tr>
             <td colspan="4">
-                <b>Diteruskan Kepada :</b> 
+                <b>Diteruskan Kepada :</b>
             </td>
         </tr>
         <tr>
@@ -144,10 +144,10 @@
         </tr>
         <tr>
             <td colspan="2">
-            <?php if ($rektor["nama_jabatan"] !== 'Wakil Rektor I') { ?>
-                <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
+                <?php if ($rektor["nama_jabatan"] !== 'Wakil Rektor I') { ?>
+                    <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                 <?php } else { ?>
-                <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
                 <?php } ?>
                 Warek I
             </td>
@@ -170,10 +170,10 @@
         </tr>
         <tr>
             <td colspan="2">
-            <?php if ($rektor["nama_jabatan"] !== 'Wakil Rektor II') { ?>
-                <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
+                <?php if ($rektor["nama_jabatan"] !== 'Wakil Rektor II') { ?>
+                    <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                 <?php } else { ?>
-                <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
                 <?php } ?>
                 Warek II
             </td>
@@ -196,10 +196,10 @@
         </tr>
         <tr>
             <td colspan="2">
-            <?php if ($rektor["nama_jabatan"] !== 'Wakil Rektor III') { ?>
-                <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
+                <?php if ($rektor["nama_jabatan"] !== 'Wakil Rektor III') { ?>
+                    <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                 <?php } else { ?>
-                <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
                 <?php } ?>
                 Warek III
             </td>
@@ -222,10 +222,10 @@
         </tr>
         <tr>
             <td colspan="2">
-            <?php if ($rektor["nama_jabatan"] !== 'Kepala Biro AUAK') { ?>
-                <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
+                <?php if ($rektor["nama_jabatan"] !== 'Kepala Biro AUAK') { ?>
+                    <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                 <?php } else { ?>
-                <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
                 <?php } ?>
                 Kepala Biro AUAK
             </td>
@@ -248,10 +248,10 @@
         </tr>
         <tr>
             <td colspan="2">
-            <?php if ($rektor["nama_jabatan"] !== 'Direktur Pascasarjana') { ?>
-                <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
+                <?php if ($rektor["nama_jabatan"] !== 'Direktur Pascasarjana') { ?>
+                    <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                 <?php } else { ?>
-                <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
                 <?php } ?>
                 Direktur Pascasarjana
             </td>
@@ -274,16 +274,16 @@
         </tr>
         <tr>
             <td colspan="2">
-            <?php if ($rektor["nama_jabatan"] == 'Dekan FEBI') { ?>
-                <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
-                Dekan FEBI
+                <?php if ($rektor["nama_jabatan"] == 'Dekan FEBI') { ?>
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
+                    Dekan FEBI
                 <?php } else if ($rektor["nama_jabatan"] == 'Dekan FUAD') { ?>
-                <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
-                Dekan FUAD
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
+                    Dekan FUAD
                 <?php } else { ?>
                     <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                     Dekan .....
-                <?php } ?>               
+                <?php } ?>
             </td>
             <td>
                 <?php if ($suratmasuk["petunjuk"] !== 'Sesuai Catatan') { ?>
@@ -304,16 +304,16 @@
         </tr>
         <tr>
             <td colspan="2">
-            <?php if ($rektor["nama_jabatan"] == 'Kepala LPM') { ?>
-                <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
-                Kepala LPM
+                <?php if ($rektor["nama_jabatan"] == 'Kepala LPM') { ?>
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
+                    Kepala LPM
                 <?php } else if ($rektor["nama_jabatan"] == 'Kepala LP2M') { ?>
-                <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
-                Kepala LP2M
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
+                    Kepala LP2M
                 <?php } else { ?>
                     <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                     KA. LPM/LP2M
-                <?php } ?> 
+                <?php } ?>
             </td>
             <td>
                 <?php if ($suratmasuk["petunjuk"] !== 'Untuk Perhatian') { ?>

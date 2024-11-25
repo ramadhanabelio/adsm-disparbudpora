@@ -15,7 +15,7 @@ class Unit extends CI_Controller
         $this->load->view('unit/index', $data);
         $this->load->view('templates/footer');
     }
-    
+
     public function jabatan1($id_unit)
     {
         $data['title'] = 'Data Jabatan';
@@ -49,10 +49,10 @@ class Unit extends CI_Controller
             $this->load->view('templates/footer');
         }
     }
-    
+
     public function tambahJabatan2($id_unit)
     {
-        $data['title'] = 'Tambah jabatan';
+        $data['title'] = 'Tambah Jabatan';
         $data['user'] = $this->db->get_where('tb_user', ['username' => $this->session->userdata('username')])->row_array();
         $data['jabatan'] = $this->User_model->GetJabatanUser();
         $data['unit'] = $this->Unit_model->getUnitId($id_unit);

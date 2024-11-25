@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-2">
-        <h1 class="h3 mb-2 text-gray-800"><?= $title; ?></h1>
+        <h1 class="h3 mt-4 mb-4 text-gray-800"><?= $title; ?></h1>
     </div>
 
     <table class="table">

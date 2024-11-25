@@ -11,17 +11,17 @@ class Admin extends CI_Controller
         $data['totalsuratmasuk'] = $this->SuratMasuk_model->totalsuratmasuk();
         $data['jumlaharsipsurat'] = $this->SuratMasuk_model->jumlaharsipsurat();
         $data['suratdalamdisposisi'] = $this->SuratMasuk_model->suratmasukdalamdisposisi();
-       
+
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
         $this->load->view('admin/index', $data);
         $this->load->view('templates/footer');
     }
-    
+
     public function dashboard()
     {
-        $data['title'] = 'Dashboard';
+        $data['title'] = 'Dashboard Operator';
         $data['user'] = $this->db->get_where('tb_user', ['username' => $this->session->userdata('username')])->row_array();
         $data['jumlahsuratbaru'] = $this->Disposisi_model->smPengguna2();
         $data['jumlaharsipsurat'] = $this->SuratMasuk_model->getArsipSuratmasukPengguna2();

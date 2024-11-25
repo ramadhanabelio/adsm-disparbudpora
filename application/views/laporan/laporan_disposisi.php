@@ -42,7 +42,7 @@
             <td>Nomor Surat</td>
             <td><?= $suratmasuk['no_surat'] ?></td>
             <td colspan="2">
-                Status : 
+                Status :
                 <?php if ($suratmasuk["status_surat"] !== 'Asli') { ?>
                     <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                 <?php } else { ?>
@@ -98,7 +98,7 @@
                     <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
                 <?php } ?>
                 Sangat Rahasia
-                    <br>
+                <br>
                 <?php if ($suratmasuk["sifat_surat"] !== 'Rahasia') { ?>
                     <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;">
                 <?php } else { ?>
@@ -127,19 +127,19 @@
         </tr>
         <tr>
             <td colspan="4">
-                <b>Diteruskan Kepada :</b> 
+                <b>Diteruskan Kepada :</b>
             </td>
         </tr>
-            <?php $no = 1;
-                foreach ($disposisi as $dp) : ?>
-        <tr>
-            <td colspan="1">
+        <?php $no = 1;
+        foreach ($disposisi as $dp) : ?>
+            <tr>
+                <td colspan="1">
                     <?= $no++ ?>. <?= $dp['pengirim']; ?>
-            </td>
-            <td colspan="3">
+                </td>
+                <td colspan="3">
                     : <?= $dp['keterangan']; ?>
-            </td>
-        </tr>
+                </td>
+            </tr>
         <?php endforeach; ?>
         </tr>
         <tr>
@@ -148,18 +148,18 @@
         </tr>
         <tr>
             <td colspan="2">
-            <?php if ($rektor["pengirim"] !== 'Rektor') { ?>
+                <?php if ($rektor["pengirim"] !== 'Rektor') { ?>
                     <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;"> ...............
                 <?php } else { ?>
-                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;"> 
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
                     <?= $rektor["nama_jabatan"]; ?>
                 <?php } ?>
             </td>
             <td colspan="2">
-            <?php if ($rektor["pengirim"] !== 'Rektor') { ?>
+                <?php if ($rektor["pengirim"] !== 'Rektor') { ?>
                     <img src="assets/img/checkbox 1.png" style="position: center; width: 15px; height: 15px;"> ...............
                 <?php } else { ?>
-                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;"> 
+                    <img src="assets/img/checkbox 2.png" style="position: center; width: 15px; height: 15px;">
                     <?= $rektor["petunjuk"]; ?>
                 <?php } ?>
             </td>

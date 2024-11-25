@@ -2,7 +2,9 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
+    <div class="d-sm-flex align-items-center justify-content-between mb-2">
+        <h1 class="h3 mt-4 mb-4 text-gray-800"><?= $title; ?></h1>
+    </div>
 
     <div class="row">
         <div class="col-md-6">
@@ -34,7 +36,7 @@
                         <div class="form-group">
                             <label for="tgl_terima">Tanggal Diterima</label>
                             <input type="date" class="form-control" id="tgl_terima" name="tgl_terima" value="<?= set_value('tgl_terima'); ?>">
-                            <small class="form-text text-danger"><?= form_error('tgl_terima'); ?></small>
+                            <small class="form-text text-danger mt-2"><?= form_error('tgl_terima'); ?></small>
                         </div>
                         <div class="form-group">
                             <label for="no_agenda">Nomor Agenda</label>

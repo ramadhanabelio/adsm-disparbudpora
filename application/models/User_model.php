@@ -31,7 +31,7 @@ class User_model extends CI_Model
         $this->db->where(['tb_user.id_jabatan' => $this->session->userdata('id_jabatan')]);
         return $this->db->get('tb_jabatan')->row_array();
     }
-    
+
     public function GetUnitUser()
     {
         $this->db->join('tb_user', 'tb_user.id_unit = tb_unit.id_unit');
@@ -47,7 +47,7 @@ class User_model extends CI_Model
         $this->db->where('tb_jabatan.nama_jabatan', 'KaSubBag TUHRT');
         return $this->db->get('signature')->row_array();
     }
-    
+
     // Mendapatkan tanda tangan user
     public function getTtdUser()
     {
@@ -56,5 +56,4 @@ class User_model extends CI_Model
         $this->db->where(['tb_jabatan.id_jabatan' => $this->session->userdata('id_jabatan')]);
         return $this->db->get('signature')->row_array();
     }
-    
 }

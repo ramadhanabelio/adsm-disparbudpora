@@ -149,7 +149,6 @@ class SuratMasuk_model extends CI_Model
 
     public function editSuratMasukFile($file)
     {
-
         $data = [
             "no_surat" => $this->input->post('no_surat', true),
             "tgl_surat" => $this->input->post('tgl_surat', true),

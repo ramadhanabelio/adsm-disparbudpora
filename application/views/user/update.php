@@ -1,14 +1,17 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
+
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
+    <div class="d-sm-flex align-items-center justify-content-between mb-2">
+        <h1 class="h3 mt-4 mb-4 text-gray-800"><?= $title; ?></h1>
+    </div>
 
     <div class="row">
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                <?php echo form_open_multipart('user/updateuser'); ?>
-                <form action="" method="post">
+                    <?php echo form_open_multipart('user/updateuser'); ?>
+                    <form action="" method="post">
                         <input type="hidden" name="id_user" value="<?= $user['id_user']; ?>">
                         <div class="form-group">
                             <label for="username">Username</label>

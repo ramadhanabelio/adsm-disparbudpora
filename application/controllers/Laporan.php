@@ -18,13 +18,13 @@ class Laporan extends CI_Controller
     public function suratmasuk()
     {
         $data['suratmasuk'] = $this->SuratMasuk_model->getAllSuratMasukLaporan();
-        
+
         $data['ttd'] = $this->User_model->getTtd();
 
         $this->load->library('mypdf2');
         $this->mypdf2->generate('laporan/laporan_semuasuratmasuk', $data);
     }
-    
+
     public function laporansuratmasuk()
     {
         $data['suratmasuk'] = $this->SuratMasuk_model->getAllSuratMasukLaporan();

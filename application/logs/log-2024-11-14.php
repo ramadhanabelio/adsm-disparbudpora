@@ -1,4 +1,4 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 
 ERROR - 2024-11-14 02:44:33 --> Severity: error --> Exception: Call to undefined method SuratMasuk_model::isNoSuratExists() C:\xampp\htdocs\surat_dispabudpora\application\controllers\SuratMasuk.php 46
 ERROR - 2024-11-14 02:44:33 --> Severity: Warning --> include(C:\xampp\htdocs\surat_dispabudpora\application\views\errors\html\error_exception.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_dispabudpora\system\core\Exceptions.php 220

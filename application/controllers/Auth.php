@@ -9,7 +9,7 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = 'e-Office Login Page';
+            $data['title'] = 'Aplikasi Disposisi Surat - Dinas Pariwisata, Kebudayaan, Kepemudaan dan Olahraga Kabupaten Bengkalis';
 
             $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/login');
@@ -109,7 +109,6 @@ class Auth extends CI_Controller
             redirect('admin/daftaruser');
         }
     }
-
 
     public function logout()
     {

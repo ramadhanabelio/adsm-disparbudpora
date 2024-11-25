@@ -4,15 +4,16 @@
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-2">
         <h1 class="h3 mt-4 mb-2 text-gray-800"><?= $title; ?></h1>
-        <a href="<?= base_url(); ?>unit/tambahJabatan2/<?= $unit['id_unit'] ?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Tambah jabatan</a>
+        <a href="<?= base_url(); ?>unit/tambahJabatan2/<?= $unit['id_unit'] ?>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Tambah Jabatan</a>
     </div>
 
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">NO</th>
+                <th scope="col">No.</th>
                 <th scope="col">Nama Unit</th>
                 <th scope="col">Nama Jabatan</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -20,7 +21,7 @@
             $i = 1;
             foreach ($jabatan as $jb) : ?>
                 <tr>
-                    <td><?= $i++; ?></td>
+                    <td><?= $i++; ?>.</td>
                     <td><?= $jb['nama_unit'] ?></td>
                     <td><?= $jb['nama_jabatan'] ?></td>
                     <td>
