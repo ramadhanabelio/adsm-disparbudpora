@@ -62,13 +62,13 @@ Open the config.php file located at application/config/config.php.
 Look for the following line:
 
 ```bash
-$config['base_url'] = 'http://localhost/surat_disparbudpora/';
+$config['base_url'] = 'http://localhost/adsm-disparbudpora/';
 ```
 
-Modify the URL to match the directory or folder name of your project. For example, if the project is in a folder called surat_disparbudpora, keep it as is. If the folder name is different, change it accordingly:
+Modify the URL to match the directory or folder name of your project. For example, if the project is in a folder called adsm-disparbudpora, keep it as is. If the folder name is different, change it accordingly:
 
 ```bash
-$config['base_url'] = 'http://localhost/adsm-disparbudpora/';
+$config['base_url'] = 'http://localhost/project-name/';
 ```
 
 **4.** Configure the database in application/config/database.php:
@@ -78,6 +78,8 @@ First, create a database named adsm_diparbudpora in your MySQL database.
 ```bash
 CREATE DATABASE adsm_disparbudpora;
 ```
+
+Import the SQL file in the database folder with the name adsm_disparbudpora.sql
 
 Open the database.php file located at application/config/database.php.
 Update the database connection settings to match your local database configuration:
