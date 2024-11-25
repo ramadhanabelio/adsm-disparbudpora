@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Nov 2024 pada 08.48
--- Versi server: 10.4.6-MariaDB
--- Versi PHP: 7.3.8
+-- Generation Time: Nov 25, 2024 at 04:10 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `surat_dispabudpora`
+-- Database: `surat_disparbudpora`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `signature`
+-- Table structure for table `signature`
 --
 
 CREATE TABLE `signature` (
@@ -37,17 +36,10 @@ CREATE TABLE `signature` (
   `append` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `signature`
---
-
-INSERT INTO `signature` (`id`, `id_user`, `name`, `img`, `rowno`, `append`) VALUES
-(1, 34, '', 'assets/signature-image/6735581bea528.png', '1474398966', 0);
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_disposisi`
+-- Table structure for table `tb_disposisi`
 --
 
 CREATE TABLE `tb_disposisi` (
@@ -60,18 +52,10 @@ CREATE TABLE `tb_disposisi` (
   `status_disposisi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `tb_disposisi`
---
-
-INSERT INTO `tb_disposisi` (`id_disposisi`, `id_suratmasuk`, `pengirim`, `id_tujuan`, `keterangan`, `dikembalikan`, `status_disposisi`) VALUES
-(1, 1, 'Umum', 17, '', '', 1),
-(2, 1, 'Operator Bagian Kepemudaan', 1, 'Laksanakan', '', 0);
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_jabatan`
+-- Table structure for table `tb_jabatan`
 --
 
 CREATE TABLE `tb_jabatan` (
@@ -81,22 +65,21 @@ CREATE TABLE `tb_jabatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tb_jabatan`
+-- Dumping data for table `tb_jabatan`
 --
 
 INSERT INTO `tb_jabatan` (`id_jabatan`, `id_unit`, `nama_jabatan`) VALUES
 (1, 1, 'Kepala Dinas'),
-(5, 8, 'Operator Bagian Kebudayaan'),
-(10, 12, 'Umum'),
-(13, 10, 'Operator Bagian Olahraga'),
-(17, 9, 'Operator Bagian Kepemudaan'),
-(18, 6, 'Operator Bagian Keuangan'),
-(19, 7, 'Operator Bagian Pariwisata');
+(2, 2, 'Operator Bagian Pariwisata'),
+(3, 3, 'Operator Bagian Kebudayaan'),
+(4, 4, 'Operator Bagian Olahraga'),
+(5, 5, 'Operator Bagian Kepemudaan'),
+(6, 6, 'Umum');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_surat_masuk`
+-- Table structure for table `tb_surat_masuk`
 --
 
 CREATE TABLE `tb_surat_masuk` (
@@ -120,17 +103,10 @@ CREATE TABLE `tb_surat_masuk` (
   `file` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `tb_surat_masuk`
---
-
-INSERT INTO `tb_surat_masuk` (`id_suratmasuk`, `no_surat`, `tgl_surat`, `lampiran`, `tgl_terima`, `no_agenda`, `status_surat`, `prioritas_surat`, `sifat_surat`, `dari`, `kepada`, `perihal`, `petunjuk`, `pengarsip`, `tgl_arsip`, `statuskirim`, `status`, `file`) VALUES
-(1, '200', '2024-11-15', '3', '2024-11-16', '2', 'Asli', 'Biasa', 'Biasa', 'Samsat', 'Operator Bagian Kepemudaan', 'Dinas', '', '', '0000-00-00 00:00:00', 1, 0, 'CV__KRISNA_(1).pdf');
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_unit`
+-- Table structure for table `tb_unit`
 --
 
 CREATE TABLE `tb_unit` (
@@ -139,21 +115,21 @@ CREATE TABLE `tb_unit` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tb_unit`
+-- Dumping data for table `tb_unit`
 --
 
 INSERT INTO `tb_unit` (`id_unit`, `nama_unit`) VALUES
 (1, 'Kepala Dinas'),
-(7, 'Bidang Pariwisata'),
-(8, 'Bidang Kebudayaan'),
-(9, 'Bidang Kepemudaan'),
-(10, 'Bidang Olahraga'),
-(12, 'Umum');
+(2, 'Bidang Pariwisata'),
+(3, 'Bidang Kebudayaan'),
+(4, 'Bidang Kepemudaan'),
+(5, 'Bidang Olahraga'),
+(6, 'Umum');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_user`
+-- Table structure for table `tb_user`
 --
 
 CREATE TABLE `tb_user` (
@@ -169,94 +145,94 @@ CREATE TABLE `tb_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tb_user`
+-- Dumping data for table `tb_user`
 --
 
 INSERT INTO `tb_user` (`id_user`, `username`, `password`, `nama`, `nip`, `id_unit`, `id_jabatan`, `status`, `level`) VALUES
 (1, 'kepaladinas', '$2y$10$r2Mf8J7fSScAx2yIyMvH1.bJBRyKIaUhSLgBhoFuu/k5HBTmU3cgK', 'Edi Sakura, S.Pd, M.Pd', '196605141988111001', 1, 1, 1, 2),
-(2, 'operatorbudaya', '$2y$10$PxYPwypaaGcjEjLmSOyLkOkjjF3GU9ZzEkbtILJ0leFVFv4QyI2jO', '', '', 8, 5, 1, 2),
-(3, 'operatorpariwisata', '$2y$10$mJeGCIPo3plaOaFCBKyzcOikPegaYOkB0Pdj5zDAFks4AIhEigeTi', '', '', 7, 19, 1, 2),
-(4, 'operatorkepemudaan', '$2y$10$Y89Yy7lWsxYXrLPVDAasXeUimekeCzRqRvLlN9j9jEsvmZCubQNtO', 'Sugeng', '12312312', 9, 17, 1, 2),
-(5, 'operatorolahraga', '$2y$10$kUeMD9WbT3Ja8AWNY7o10O3tDDbtKt1bdO8wC3rTSNf9pbI98fJBO', '', '', 10, 13, 1, 2),
-(6, 'umum', '$2y$10$Ts6sLbSdD7CdD0DKZtyNOOMT3keaVwBYj0E8FqBTwElX/Iw54m93S', 'Bambang Wicaksono', '1950401013', 12, 10, 1, 1);
+(2, 'operatorpariwisata', '$2y$10$mJeGCIPo3plaOaFCBKyzcOikPegaYOkB0Pdj5zDAFks4AIhEigeTi', '', '', 2, 2, 1, 2),
+(3, 'operatorkebudayaan', '$2y$10$PxYPwypaaGcjEjLmSOyLkOkjjF3GU9ZzEkbtILJ0leFVFv4QyI2jO', '', '', 3, 3, 1, 2),
+(4, 'operatorkepemudaan', '$2y$10$Y89Yy7lWsxYXrLPVDAasXeUimekeCzRqRvLlN9j9jEsvmZCubQNtO', '', '', 4, 4, 1, 2),
+(5, 'operatorolahraga', '$2y$10$kUeMD9WbT3Ja8AWNY7o10O3tDDbtKt1bdO8wC3rTSNf9pbI98fJBO', '', '', 5, 5, 1, 2),
+(6, 'umum', '$2y$10$Ts6sLbSdD7CdD0DKZtyNOOMT3keaVwBYj0E8FqBTwElX/Iw54m93S', 'Bambang Wicaksono', '1950401013', 6, 6, 1, 1);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `signature`
+-- Indexes for table `signature`
 --
 ALTER TABLE `signature`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `tb_disposisi`
+-- Indexes for table `tb_disposisi`
 --
 ALTER TABLE `tb_disposisi`
   ADD PRIMARY KEY (`id_disposisi`);
 
 --
--- Indeks untuk tabel `tb_jabatan`
+-- Indexes for table `tb_jabatan`
 --
 ALTER TABLE `tb_jabatan`
   ADD PRIMARY KEY (`id_jabatan`);
 
 --
--- Indeks untuk tabel `tb_surat_masuk`
+-- Indexes for table `tb_surat_masuk`
 --
 ALTER TABLE `tb_surat_masuk`
   ADD PRIMARY KEY (`id_suratmasuk`);
 
 --
--- Indeks untuk tabel `tb_unit`
+-- Indexes for table `tb_unit`
 --
 ALTER TABLE `tb_unit`
   ADD PRIMARY KEY (`id_unit`);
 
 --
--- Indeks untuk tabel `tb_user`
+-- Indexes for table `tb_user`
 --
 ALTER TABLE `tb_user`
   ADD PRIMARY KEY (`id_user`),
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `signature`
+-- AUTO_INCREMENT for table `signature`
 --
 ALTER TABLE `signature`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_disposisi`
+-- AUTO_INCREMENT for table `tb_disposisi`
 --
 ALTER TABLE `tb_disposisi`
-  MODIFY `id_disposisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_disposisi` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_jabatan`
+-- AUTO_INCREMENT for table `tb_jabatan`
 --
 ALTER TABLE `tb_jabatan`
   MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_surat_masuk`
+-- AUTO_INCREMENT for table `tb_surat_masuk`
 --
 ALTER TABLE `tb_surat_masuk`
-  MODIFY `id_suratmasuk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_suratmasuk` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_unit`
+-- AUTO_INCREMENT for table `tb_unit`
 --
 ALTER TABLE `tb_unit`
   MODIFY `id_unit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_user`
+-- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
