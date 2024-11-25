@@ -67,9 +67,11 @@ $config['base_url'] = 'http://localhost:8080/surat_disparbudpora/';
 
 Modify the URL to match the directory or folder name of your project. For example, if the project is in a folder called surat_disparbudpora, keep it as is. If the folder name is different, change it accordingly:
 
+```bash
 $config['base_url'] = 'http://localhost/adsm-disparbudpora/';
+```
 
-**4.** 4. Configure the database in application/config/database.php:
+**4.** Configure the database in application/config/database.php:
 
 First, create a database named adsm_diparbudpora in your MySQL database.
 
