@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2024 at 04:10 AM
+-- Generation Time: Nov 25, 2024 at 05:23 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -72,8 +72,8 @@ INSERT INTO `tb_jabatan` (`id_jabatan`, `id_unit`, `nama_jabatan`) VALUES
 (1, 1, 'Kepala Dinas'),
 (2, 2, 'Operator Bagian Pariwisata'),
 (3, 3, 'Operator Bagian Kebudayaan'),
-(4, 4, 'Operator Bagian Olahraga'),
-(5, 5, 'Operator Bagian Kepemudaan'),
+(4, 4, 'Operator Bagian Kepemudaan'),
+(5, 5, 'Operator Bagian Olahraga'),
 (6, 6, 'Umum');
 
 -- --------------------------------------------------------
@@ -217,7 +217,7 @@ ALTER TABLE `tb_disposisi`
 -- AUTO_INCREMENT for table `tb_jabatan`
 --
 ALTER TABLE `tb_jabatan`
-  MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id_jabatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `tb_surat_masuk`
