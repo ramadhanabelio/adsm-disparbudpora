@@ -91,3 +91,6 @@ ERROR - 2024-11-25 04:06:15 --> Severity: Warning --> include(): Failed opening 
 ERROR - 2024-11-25 04:10:22 --> 404 Page Not Found: Vendor/bootstrap
 ERROR - 2024-11-25 04:10:22 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
 ERROR - 2024-11-25 04:10:22 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 04:15:06 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 04:15:06 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 04:15:06 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
