@@ -43,3 +43,48 @@ ERROR - 2024-11-25 03:51:15 --> Severity: Warning --> include(): Failed opening 
 ERROR - 2024-11-25 03:51:31 --> 404 Page Not Found: Vendor/bootstrap
 ERROR - 2024-11-25 03:51:31 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
 ERROR - 2024-11-25 03:51:31 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 03:55:04 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 03:55:04 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 03:55:08 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 03:55:08 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 03:55:29 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 03:55:29 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 03:55:30 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 03:55:30 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 03:55:38 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 03:55:38 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 03:55:52 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 03:55:52 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 03:55:52 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 03:57:28 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 03:57:28 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 03:57:35 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 03:57:35 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 03:57:35 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 04:02:37 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 28
+ERROR - 2024-11-25 04:02:37 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 32
+ERROR - 2024-11-25 04:02:37 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 04:02:37 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 04:02:40 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 28
+ERROR - 2024-11-25 04:02:40 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 32
+ERROR - 2024-11-25 04:02:40 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 04:02:40 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 04:02:42 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 04:02:42 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 04:02:42 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 04:02:48 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 04:02:48 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 04:03:59 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 04:03:59 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 04:04:04 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 04:04:04 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 04:04:04 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 04:04:39 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 04:04:39 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 04:04:45 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 04:04:45 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 04:05:04 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 36
+ERROR - 2024-11-25 04:05:04 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\user\index.php 38
+ERROR - 2024-11-25 04:06:15 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 04:06:15 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 04:06:15 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
