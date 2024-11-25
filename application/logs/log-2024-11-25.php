@@ -298,3 +298,22 @@ ERROR - 2024-11-25 05:20:21 --> Severity: Warning --> include(): Failed opening 
 ERROR - 2024-11-25 05:21:20 --> 404 Page Not Found: Vendor/bootstrap
 ERROR - 2024-11-25 05:21:20 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
 ERROR - 2024-11-25 05:21:20 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 09:44:39 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 09:44:39 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 09:44:39 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 09:47:33 --> 404 Page Not Found: Auth/vendor
+ERROR - 2024-11-25 09:47:33 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 09:47:33 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 10:03:31 --> The upload path does not appear to be valid.
+ERROR - 2024-11-25 10:04:35 --> The upload path does not appear to be valid.
+ERROR - 2024-11-25 10:06:11 --> The upload path does not appear to be valid.
+ERROR - 2024-11-25 10:24:08 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\surat_disparbudpora\application\views\templates\topbar.php 23
+ERROR - 2024-11-25 10:24:16 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 10:24:16 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 10:24:16 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 10:51:59 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 10:51:59 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 10:51:59 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 10:53:18 --> 404 Page Not Found: Vendor/bootstrap
+ERROR - 2024-11-25 10:53:18 --> Severity: Warning --> include(C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php): Failed to open stream: No such file or directory C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183
+ERROR - 2024-11-25 10:53:18 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\surat_disparbudpora\application\views\errors\html\error_404.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\surat_disparbudpora\system\core\Exceptions.php 183

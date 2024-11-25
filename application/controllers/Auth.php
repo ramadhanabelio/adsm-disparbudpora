@@ -15,7 +15,6 @@ class Auth extends CI_Controller
             $this->load->view('auth/login');
             $this->load->view('templates/auth_footer');
         } else {
-            // validasi success
             $this->_login();
         }
     }
@@ -27,13 +26,9 @@ class Auth extends CI_Controller
 
         $user = $this->db->get_where('tb_user', ['username' => $username])->row_array();
 
-        // jika usernya ada
         if ($user) {
-            // jika usernya aktif
             if ($user['status'] == 1) {
-                // cek password
                 if (password_verify($password, $user['password'])) {
-                    // berhasil login
                     $data = [
                         'username' => $user['username'],
                         'level' => $user['level'],
@@ -43,7 +38,6 @@ class Auth extends CI_Controller
                         'id_jabatan' => $user['id_jabatan']
                     ];
                     $this->session->set_userdata($data);
-                    // level pengguna berdasarkan level
                     if ($user['level'] == 1) {
                         redirect('admin');
                     } else if ($user['level'] != 1) {
@@ -51,21 +45,18 @@ class Auth extends CI_Controller
                     } else {
                     }
                 } else {
-                    // password salah
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
                     Wrong password!
                     </div>');
                     redirect('auth');
                 }
             } else {
-                // username tidak aktif
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
                 This username is not been activated!
                 </div>');
                 redirect('auth');
             }
         } else {
-            // username tidak terdatar terdaftar
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
             username is not registered!
             </div>');

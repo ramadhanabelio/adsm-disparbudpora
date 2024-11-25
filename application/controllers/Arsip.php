@@ -8,17 +8,14 @@ class Arsip extends CI_Controller
         $data['title'] = 'Arsip Surat';
         $data['user'] = $this->db->get_where('tb_user', ['username' => $this->session->userdata('username')])->row_array();
 
-        // Load Pagination
         $this->load->library('pagination');
 
         $config['base_url'] = 'http://localhost/e-office/arsip/index';
 
-        // Config Pagination
         $config['total_rows'] = $this->SuratMasuk_model->gettotalArsip();
         $config['per_page'] = 7;
         $data['total_rows'] = $config['total_rows'];
 
-        // Initialize
         $this->pagination->initialize($config);
 
         $data['start'] = $this->uri->segment(3);
