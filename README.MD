@@ -79,10 +79,9 @@ First, create a database named adsm_diparbudpora in your MySQL database.
 CREATE DATABASE adsm_disparbudpora;
 ```
 
-Import the SQL file in the database folder with the name adsm_disparbudpora.sql
+Import the SQL file in the database folder with the name adsm_disparbudpora.sql then
 
-Open the database.php file located at application/config/database.php.
-Update the database connection settings to match your local database configuration:
+Open the database.php file located at application/config/database.php. Update the database connection settings to match your local database configuration:
 
 ```bash
 'hostname' => 'localhost',
