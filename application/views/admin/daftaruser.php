@@ -3,16 +3,16 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-2">
-        <h1 class="h3 mb-2 text-gray-800"><?= $title; ?></h1>
+        <h1 class="h3 mt-4 mb-3 text-gray-800"><?= $title; ?></h1>
         <a href="<?= base_url(); ?>auth/registration" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Tambah user</a>
     </div>
 
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">NO</th>
-                <th scope="col">username</th>
-                <!-- <th scope="col">Action</th> -->
+                <th scope="col">No.</th>
+                <th scope="col">Username</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -20,7 +20,7 @@
             $i = 1;
             foreach ($daftaruser as $user) : ?>
                 <tr>
-                    <td><?= $i++; ?></td>
+                    <td><?= $i++; ?>.</td>
                     <td><?= $user['username'] ?></td>
                     <td>
                         <!-- <a class=" badge badge-success" href="">Detail</a>

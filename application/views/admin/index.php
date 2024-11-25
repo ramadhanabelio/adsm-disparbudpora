@@ -2,7 +2,7 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
+    <h1 class="h3 mt-4 mb-4 text-gray-800"><?= $title; ?></h1>
 
     <div class="row">
         <a class="col-xl-3 col-md-6 mb-4" href="<?= base_url(); ?>suratmasuk">
