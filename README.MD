@@ -62,7 +62,7 @@ Open the config.php file located at application/config/config.php.
 Look for the following line:
 
 ```bash
-$config['base_url'] = 'http://localhost:8080/surat_disparbudpora/';
+$config['base_url'] = 'http://localhost/surat_disparbudpora/';
 ```
 
 Modify the URL to match the directory or folder name of your project. For example, if the project is in a folder called surat_disparbudpora, keep it as is. If the folder name is different, change it accordingly:
