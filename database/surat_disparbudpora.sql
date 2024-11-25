@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2024 at 05:23 AM
+-- Generation Time: Nov 25, 2024 at 10:56 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -70,10 +70,10 @@ CREATE TABLE `tb_jabatan` (
 
 INSERT INTO `tb_jabatan` (`id_jabatan`, `id_unit`, `nama_jabatan`) VALUES
 (1, 1, 'Kepala Dinas'),
-(2, 2, 'Operator Bagian Pariwisata'),
-(3, 3, 'Operator Bagian Kebudayaan'),
-(4, 4, 'Operator Bagian Kepemudaan'),
-(5, 5, 'Operator Bagian Olahraga'),
+(2, 2, 'Operator Bidang Pariwisata'),
+(3, 3, 'Operator Bidang Kebudayaan'),
+(4, 4, 'Operator Bidang Kepemudaan'),
+(5, 5, 'Operator Bidang Olahraga'),
 (6, 6, 'Umum');
 
 -- --------------------------------------------------------
