@@ -76,7 +76,7 @@ $config['base_url'] = 'http://localhost/adsm-disparbudpora/';
 First, create a database named adsm_diparbudpora in your MySQL database.
 
 ```bash
-CREATE DATABASE adsm_diparbudpora;
+CREATE DATABASE adsm_disparbudpora;
 ```
 
 Open the database.php file located at application/config/database.php.
@@ -86,7 +86,7 @@ Update the database connection settings to match your local database configurati
 'hostname' => 'localhost',
 'username' => 'root',
 'password' => '',
-'database' => 'adsm_diparbudpora',
+'database' => 'adsm_disparbudpora',
 ```
 
 **5.** Create a folder for file uploads:
@@ -115,10 +115,10 @@ mkdir signature-image
 
 Once the configuration is complete, you can access your project via the browser. Open your browser and go to the URL specified in the base_url setting.
 
-For example, if you set the base_url as http://localhost:8080/adsm-disparbudpora/, you can access the application by visiting:
+For example, if you set the base_url as http://localhost/adsm-disparbudpora/, you can access the application by visiting:
 
 ```bash
-http://localhost:8080/adsm-disparbudpora/
+http://localhost/adsm-disparbudpora/
 ```
 
-After following the steps above, your CodeIgniter project is now ready to use and can be accessed via the browser at http://localhost:8080/adsm-disparbudpora.
+After following the steps above, your CodeIgniter project is now ready to use and can be accessed via the browser at http://localhost/adsm-disparbudpora.
